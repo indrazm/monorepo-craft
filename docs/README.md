@@ -22,11 +22,11 @@ independently. Keep existing numbers and filenames stable so links remain valid.
 
 Each decision has exactly one status:
 
-| Status | Meaning |
-| --- | --- |
-| `accepted` | The decision is in effect. |
-| `superseeded` | A newer decision replaces this one. Link to the replacement. |
-| `deprecated` | The decision no longer applies, without a replacement. Explain why. |
+| Status        | Meaning                                                             |
+| ------------- | ------------------------------------------------------------------- |
+| `accepted`    | The decision is in effect.                                          |
+| `superseeded` | A newer decision replaces this one. Link to the replacement.        |
+| `deprecated`  | The decision no longer applies, without a replacement. Explain why. |
 
 Preserve old records. When replacing a decision, create a new accepted record,
 mark the old one `superseeded`, and link the two records. When deprecating a
@@ -80,6 +80,8 @@ Supporting context, ideas, assumptions, and open questions.
 ### Decisions
 
 - [0001: Use a pnpm workspace](decision/0001-use-pnpm-workspace.md)
+- [0002: Use Oxlint, Oxfmt, and Husky](decision/0002-use-oxlint-oxfmt-and-husky.md)
+- [0003: Use root Playwright tests](decision/0003-use-root-playwright-tests.md)
 
 ### Product
 

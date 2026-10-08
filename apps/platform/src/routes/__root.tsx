@@ -4,7 +4,9 @@ export const Route = createRootRoute({
   component: () => (
     <main>
       <nav>
-        <Link to="/" activeOptions={{ exact: true }}>Home</Link>
+        <Link to="/" activeOptions={{ exact: true }}>
+          Home
+        </Link>
         <Link to="/about">About</Link>
       </nav>
       <Outlet />

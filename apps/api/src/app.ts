@@ -7,7 +7,10 @@ import { z } from 'zod'
 const log = createLogger('api')
 const app = new Hono()
 
-app.use('*', requestLogger((message) => log.info(message)))
+app.use(
+  '*',
+  requestLogger((message) => log.info(message)),
+)
 
 app.get('/api/health', (c) => c.json({ status: 'ok' }))
 

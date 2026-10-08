@@ -2,15 +2,22 @@
   "name": "@repo/logger",
   "version": "0.0.0",
   "private": true,
+  "files": [
+    "dist"
+  ],
   "type": "module",
   "exports": {
-    ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" }
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
   },
-  "files": ["dist"],
   "scripts": {
     "dev": "tsc --watch --preserveWatchOutput",
     "build": "tsc",
     "typecheck": "tsc --noEmit"
   },
-  "devDependencies": { "typescript": "^7.0.2" }
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
 }
